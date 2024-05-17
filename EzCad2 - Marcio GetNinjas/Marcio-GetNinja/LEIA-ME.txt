@@ -1,0 +1,3 @@
+Ao iniciar a automação ele criará a pasta "a_gravar" e informará que  está vazia, clique em OK para encerrar a automação;
+Agora abra o programa EZCAD2 e configure a pasta "a_gravar" para acessar os arquivos, feche o programa;
+Execute a aplicação.

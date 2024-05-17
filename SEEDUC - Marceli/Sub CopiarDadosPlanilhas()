@@ -1,0 +1,77 @@
+Sub CopiarDadosPlanilhas()
+    Dim wbOrigem As Workbook
+    Dim wbDestino As Workbook
+    Dim wsOrigem As Worksheet
+    Dim wsDestino As Worksheet
+    Dim caminho As String
+    Dim nomeArquivo As String
+    Dim nomeArquivoDestino As String
+    Dim ultimaLinha As Long
+    Dim linhaDestino As Long
+    Dim primeiraLinha As Long ' Variável para controlar a primeira linha de origem a ser copiada
+    
+    ' Define o caminho do arquivo de origem
+    caminho = "C:\Users\Marvin\Documents\GitHub\SEEDUC\download\"
+    
+    ' Obtém o primeiro nome de arquivo da pasta especificada
+    nomeArquivo = Dir(caminho & "*.xlsx")
+    
+    ' Verifica se foi encontrado um arquivo
+    If nomeArquivo <> "" Then
+        ' Define o nome do arquivo de destino
+        nomeArquivoDestino = "atualizado.xlsx"
+        
+        ' Cria uma nova planilha de destino
+        Set wbDestino = Workbooks.Add
+        Set wsDestino = wbDestino.Sheets(1)
+        
+        ' Define a próxima linha de destino
+        linhaDestino = 1
+        
+        ' Loop através de todos os arquivos na pasta
+        Do While nomeArquivo <> ""
+            ' Abre a planilha de origem
+            Set wbOrigem = Workbooks.Open(caminho & nomeArquivo)
+            Set wsOrigem = wbOrigem.Sheets(1) ' Assume que os dados estão na primeira planilha
+            
+            ' Desbloqueia a planilha de origem
+            wsOrigem.Unprotect
+            
+            ' Encontra a última linha com dados na coluna B
+            ultimaLinha = wsOrigem.Cells(wsOrigem.Rows.Count, 2).End(xlUp).Row
+            
+            ' Define a primeira linha de origem com base na primeira planilha
+            If linhaDestino = 1 Then
+                primeiraLinha = 14 ' Para a primeira planilha, comece da linha 14
+            Else
+                primeiraLinha = 15 ' Para as demais planilhas, comece da linha 15
+            End If
+            
+            ' Verifica se a última linha é maior ou igual à primeira linha (para evitar erros caso não haja dados suficientes)
+            If ultimaLinha >= primeiraLinha Then
+                ' Copia os dados da planilha de origem para a planilha de destino a partir da primeira linha até a última linha com dados
+                wsOrigem.Range("B" & primeiraLinha & ":Z" & ultimaLinha).Copy wsDestino.Range("A" & linhaDestino)
+                
+                ' Atualiza a próxima linha de destino
+                linhaDestino = linhaDestino + ultimaLinha - primeiraLinha + 1 ' Adiciona 1 para incluir a linha de origem na contagem
+            End If
+            
+            ' Fecha a planilha de origem sem salvar alterações
+            wbOrigem.Close SaveChanges:=False
+            
+            ' Obtém o próximo nome de arquivo
+            nomeArquivo = Dir
+        Loop
+        
+        ' Salva a nova planilha com o nome desejado
+        wbDestino.SaveAs caminho & nomeArquivoDestino
+        
+        ' Fecha a planilha de destino
+        wbDestino.Close SaveChanges:=True
+        
+        MsgBox "Dados copiados com sucesso para a nova planilha.", vbInformation
+    Else
+        MsgBox "Não foi encontrado nenhum arquivo na pasta especificada.", vbExclamation
+    End If
+End Sub
+

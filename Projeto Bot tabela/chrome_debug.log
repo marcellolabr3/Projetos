@@ -1,0 +1,8 @@
+[868:7780:0515/184946.758:WARNING:chrome_main_delegate.cc(742)] This is Chrome version 125.0.6422.61 (not a warning)
+[868:7780:0515/184946.795:INFO:chrome_browser_cloud_management_controller.cc(168)] Starting CBCM Controller Initialization
+[868:7780:0515/184946.795:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
+[868:7780:0515/184946.822:WARNING:browser_management_service.cc(128)] EnterpriseLogoUrl fetch failed with error code -1 and MIME type 
+[868:7780:0515/184947.910:INFO:CONSOLE(132)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v3/y8/r/lnCqjaV0IGZ.js?_nc_x=Ij3Wp8lg5Kz (132)
+[868:7780:0515/184948.748:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.", source:  (0)
+[868:7780:0515/184948.748:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'shared-storage'.", source:  (0)
+[868:7780:0515/184948.748:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'shared-storage-select-url'.", source:  (0)

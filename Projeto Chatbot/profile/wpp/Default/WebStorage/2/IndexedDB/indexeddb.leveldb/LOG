@@ -1,0 +1,6 @@
+2024/04/29-20:08:19.086 306c Creating DB C:\Users\Marvin\Documents\GitHub\ChatBot Wpp\ChatBot\profile\wpp\Default\WebStorage\2\IndexedDB\indexeddb.leveldb since it was missing.
+2024/04/29-20:08:19.095 306c Reusing MANIFEST C:\Users\Marvin\Documents\GitHub\ChatBot Wpp\ChatBot\profile\wpp\Default\WebStorage\2\IndexedDB\indexeddb.leveldb/MANIFEST-000001
+2024/04/29-20:12:27.158 30b0 Level-0 table #5: started
+2024/04/29-20:12:27.162 30b0 Level-0 table #5: 33536 bytes OK
+2024/04/29-20:12:27.165 30b0 Delete type=0 #3
+2024/04/29-20:12:27.166 30b0 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

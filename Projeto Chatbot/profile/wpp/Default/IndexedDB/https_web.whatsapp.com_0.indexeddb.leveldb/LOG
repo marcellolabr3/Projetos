@@ -1,0 +1,15 @@
+2024/05/15-19:23:48.763 1028 Reusing MANIFEST D:\Dev\Projetos\Projeto Chatbot\profile\wpp\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/05/15-19:23:48.998 1028 Recovering log #7825
+2024/05/15-19:23:49.041 1028 Reusing old log D:\Dev\Projetos\Projeto Chatbot\profile\wpp\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/007825.log 
+2024/05/15-19:23:56.954 1c94 Level-0 table #7855: started
+2024/05/15-19:23:57.424 1c94 Level-0 table #7855: 818048 bytes OK
+2024/05/15-19:23:57.525 1c94 Delete type=0 #7825
+2024/05/15-19:23:57.526 19a4 Manual compaction at level-0 from '\x00\x97\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x98\x00\x00\x00' @ 0 : 0; will stop at '\x00\x97\x00\x00\x05' @ 16678909 : 1
+2024/05/15-19:23:57.526 19a4 Compacting 1@0 + 0@1 files
+2024/05/15-19:23:57.893 19a4 Generated table #7856@0: 11993 keys, 327525 bytes
+2024/05/15-19:23:58.173 19a4 Generated table #7857@0: 329 keys, 24872 bytes
+2024/05/15-19:23:58.392 19a4 Generated table #7858@0: 228 keys, 8255 bytes
+2024/05/15-19:23:58.392 19a4 Compacted 1@0 + 0@1 files => 360652 bytes
+2024/05/15-19:23:58.532 19a4 compacted to: files[ 0 3 49 0 0 0 0 ]
+2024/05/15-19:23:58.532 19a4 Delete type=2 #7855
+2024/05/15-19:23:58.533 19a4 Manual compaction at level-0 from '\x00\x97\x00\x00\x05' @ 16678909 : 1 .. '\x00\x98\x00\x00\x00' @ 0 : 0; will stop at (end)

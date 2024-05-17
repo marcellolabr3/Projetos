@@ -1,0 +1,17 @@
+1º Para que o programa funcione, extraia o conteudo do arquivo Auto EzCad2 v1.0.rar para a pasta onde o programa EzCad2.exe está instalado. 
+
+Ao descompactar você terá adicionado:
+
+		3 arquivos de imagem: draw.png, stop.png e xey2.png
+		2 pastas: a_gravar e Código Auto EzCad2 v1.0; 
+		2 arquivos TXT: bibliotecas_instaladas e IMPORTANTE;
+		1 arquivo EXE: Auto EzCad2 v1.0; 
+		
+Na pasta a_gravar existe um arquivo que nao pode ser movido o: QR5.ezd
+		Este arquivo seta os parametros de gravação.
+		ELE SEMPRE PRECISA ESTAR NA PASTA.
+
+2º Alimente a pasta (a_gravar), com as imagens que serão gravadas.
+3º Abra o EzCad2.EXE vá no menu "Draw > Bitmap File > Selecione o caminho da pasta "a_gravar", selecione um arquivo, abra e feche o programa.
+4º Execute o Auto EzCad2 v1.0
+5º Quando todos os arquivos forem gravados uma janela informará, pressione OK para encerrar a aplicação.

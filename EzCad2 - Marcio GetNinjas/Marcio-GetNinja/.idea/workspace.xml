@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4a36c6d2-c6e5-447a-bb93-c50bd7f5901f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/a_gravar/mecha5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arquivo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bandeja.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/definição.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/prototipo.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_draw.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_xey.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/marvin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prototipo.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prototipo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prototipo2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prototipo3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/save2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot_temp.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshot_temp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xey2.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2eotbQIWyVtUnlIzouVrj6pPkaH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Auto EzCad2 v1.0.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Auto EzCad2 v1.1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Auto EzCad2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.EzCad2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bandeja.executor&quot;: &quot;Run&quot;,
+    &quot;Python.locate.executor&quot;: &quot;Run&quot;,
+    &quot;Python.prototipo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.prototipo2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.prototipo3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.reborn.executor&quot;: &quot;Run&quot;,
+    &quot;Python.save2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.screen_locate.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Marvin/Documents/GitHub/Marcio-GetNinja&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-09665e90c3a7-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.15026.15" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4a36c6d2-c6e5-447a-bb93-c50bd7f5901f" name="Changes" comment="" />
+      <created>1712582831047</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712582831047</updated>
+      <workItem from="1712582832431" duration="1490000" />
+      <workItem from="1712584406758" duration="6867000" />
+      <workItem from="1712593693358" duration="17675000" />
+      <workItem from="1712631576875" duration="311000" />
+      <workItem from="1712686198589" duration="7790000" />
+      <workItem from="1712696344645" duration="435000" />
+      <workItem from="1712700295873" duration="217000" />
+      <workItem from="1712776687786" duration="2611000" />
+      <workItem from="1712842785405" duration="783000" />
+      <workItem from="1714397003653" duration="216000" />
+      <workItem from="1714397232678" duration="3252000" />
+      <workItem from="1714400514124" duration="1694000" />
+      <workItem from="1714402442605" duration="502000" />
+      <workItem from="1714402982340" duration="1729000" />
+      <workItem from="1714406964128" duration="24000" />
+      <workItem from="1714420039709" duration="9128000" />
+      <workItem from="1714482465951" duration="8795000" />
+      <workItem from="1714506245493" duration="15434000" />
+      <workItem from="1714610327894" duration="6000" />
+      <workItem from="1714646856454" duration="8621000" />
+      <workItem from="1714679283054" duration="2590000" />
+      <workItem from="1714993356732" duration="27815000" />
+      <workItem from="1715041164860" duration="315000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://D:/Dev/Tech/django1/django1/wsgi.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/EzCad2_py$Auto_EzCad2_v1_1.coverage" NAME="Auto EzCad2 v1.1 Coverage Results" MODIFIED="1714425249546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Marcio_GetNinja$prototipo2.coverage" NAME="prototipo2 Coverage Results" MODIFIED="1714654695553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/prototipo2_py$Auto_EzCad2.coverage" NAME="Auto EzCad2 Coverage Results" MODIFIED="1715025148708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Marcio_GetNinja$screen_locate.coverage" NAME="screen_locate Coverage Results" MODIFIED="1714523829859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Marcio_GetNinja$prototipo.coverage" NAME="prototipo Coverage Results" MODIFIED="1714649916495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codigos adicionais" />
+    <SUITE FILE_PATH="coverage/EzCad2_py$EzCad2.coverage" NAME="EzCad2 Coverage Results" MODIFIED="1714499565855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/prototipo2_py$EzCad2.coverage" NAME="EzCad2 Coverage Results" MODIFIED="1715023008905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EzCad2_py$locate.coverage" NAME="locate Coverage Results" MODIFIED="1714492798871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/prototipo2_py$prototipo2.coverage" NAME="prototipo2 Coverage Results" MODIFIED="1714679323661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Marcio_GetNinja$prototipo3.coverage" NAME="prototipo3 Coverage Results" MODIFIED="1712589899937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Auto_EzCad2_v1_1_py$Auto_EzCad2_v1_1.coverage" NAME="Auto EzCad2 v1.1 Coverage Results" MODIFIED="1714402476832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Marcio_GetNinja$Auto_EzCad2_v1_0.coverage" NAME="Auto EzCad2 v1.0 Coverage Results" MODIFIED="1714519325027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Marcio_GetNinja$locate.coverage" NAME="locate Coverage Results" MODIFIED="1712691664312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Auto_EzCad2_v1_1_py$Auto_EzCad2_v1_0.coverage" NAME="Auto EzCad2 v1.0 Coverage Results" MODIFIED="1714398329161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/prototipo2_py$reborn.coverage" NAME="reborn Coverage Results" MODIFIED="1715024971712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EzCad2_py$Auto_EzCad2_v1_0.coverage" NAME="Auto EzCad2 v1.0 Coverage Results" MODIFIED="1714499372195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Marcio_GetNinja$save2.coverage" NAME="save2 Coverage Results" MODIFIED="1714514848145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codigos adicionais" />
+    <SUITE FILE_PATH="coverage/Marcio_GetNinja$EzCad2.coverage" NAME="EzCad2 Coverage Results" MODIFIED="1714522420908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/prototipo2_py$Auto_EzCad2_v1_0.coverage" NAME="Auto EzCad2 v1.0 Coverage Results" MODIFIED="1714679657716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/prototipo2_py$save2.coverage" NAME="save2 Coverage Results" MODIFIED="1715013280516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codigos adicionais" />
+    <SUITE FILE_PATH="coverage/prototipo2_py$bandeja.coverage" NAME="bandeja Coverage Results" MODIFIED="1715019302506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codigos adicionais" />
+  </component>
+</project>

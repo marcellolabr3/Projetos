@@ -1,0 +1,247 @@
+Sub CopiarDadosPlanilhas()
+    Dim wbOrigem As Workbook
+    Dim wbDestino As Workbook
+    Dim wsOrigem As Worksheet
+    Dim wsDestino As Worksheet
+    Dim caminho As String
+    Dim nomeArquivo As String
+    Dim nomeArquivoDestino As String
+    Dim ultimaLinha As Long
+    Dim linhaDestino As Long
+    Dim primeiraLinha As Long ' Variável para controlar a primeira linha de origem a ser copiada
+    Dim mes As Integer ' Variável para armazenar o número do mês
+    
+    ' Define o caminho do arquivo de origem
+    caminho = "C:\Users\Marvin\Documents\GitHub\SEEDUC\download\"
+    
+    ' Obtém o primeiro nome de arquivo da pasta especificada
+    nomeArquivo = Dir(caminho & "*.xlsx")
+    
+    ' Verifica se foi encontrado um arquivo
+    If nomeArquivo <> "" Then
+        ' Define o nome do arquivo de destino
+        nomeArquivoDestino = "atualizado.xlsx"
+        
+        ' Cria uma nova planilha de destino
+        Set wbDestino = Workbooks.Add
+        Set wsDestino = wbDestino.Sheets(1)
+        AtribuirValoresMeses
+        
+        ' Define a próxima linha de destino
+        linhaDestino = 1
+        
+        ' Loop através de todos os arquivos na pasta
+        Do While nomeArquivo <> ""
+            ' Abre a planilha de origem
+            Set wbOrigem = Workbooks.Open(caminho & nomeArquivo)
+            Set wsOrigem = wbOrigem.Sheets(1) ' Assume que os dados estão na primeira planilha
+            
+            ' Desbloqueia a planilha de origem
+            wsOrigem.Unprotect
+            
+            ' Encontra a última linha com dados na coluna B
+            ultimaLinha = wsOrigem.Cells(wsOrigem.Rows.Count, 2).End(xlUp).Row
+            
+            ' Define a primeira linha de origem com base na primeira planilha
+            If linhaDestino = 1 Then
+                primeiraLinha = 14 ' Para a primeira planilha, comece da linha 14
+            Else
+                primeiraLinha = 15 ' Para as demais planilhas, comece da linha 15
+            End If
+            
+            ' Verifica se a última linha é maior ou igual à primeira linha (para evitar erros caso não haja dados suficientes)
+            If ultimaLinha >= primeiraLinha Then
+                ' Extrai o número do mês da célula I7
+                mes = ExtrairMes(wsOrigem.Range("I7"))
+                
+                              
+                ' Copia os dados da planilha de origem para a planilha de destino a partir da primeira linha até a última linha com dados
+                wsOrigem.Range("B" & primeiraLinha & ":L" & ultimaLinha).Copy wsDestino.Range("A" & linhaDestino)
+                
+                RecortarDadosParaIndice wsDestino, mes
+                
+                ' Move os dados da coluna K para a coluna correspondente ao número do mês a partir da linha 2
+                ' wsDestino.Range(wsDestino.Cells(2, "K"), wsDestino.Cells(wsDestino.Rows.Count, "K").End(xlUp)).Cut wsDestino.Cells(2, mes + 12)
+                
+                                          
+                ' Atualiza a próxima linha de destino
+                linhaDestino = linhaDestino + ultimaLinha - primeiraLinha + 1 ' Adiciona 1 para incluir a linha de origem na contagem
+            End If
+            
+            
+            ' Fecha a planilha de origem sem salvar alterações
+            wbOrigem.Close SaveChanges:=False
+            
+            ' Obtém o próximo nome de arquivo
+            nomeArquivo = Dir
+        Loop
+        
+        LimparFormatoPlanilha wsDestino
+
+        ' Agrupa os usuários por matrícula
+        AgruparUsuariosPorMatricula wsDestino
+                
+        ExcluirColunasVazias Planilha1
+        
+                ' Organiza os dados na planilha de destino em uma tabela
+        With wsDestino
+            Dim lastRowDestino As Long
+            Dim lastColumnDestino As Long
+            lastRowDestino = .Cells.Find("*", SearchOrder:=xlByRows, SearchDirection:=xlPrevious).Row
+            lastColumnDestino = .Cells.Find("*", SearchOrder:=xlByColumns, SearchDirection:=xlPrevious).Column
+            Dim rngDestino As Range
+            Set rngDestino = .Range(.Cells(1, 1), .Cells(lastRowDestino, lastColumnDestino))
+            .ListObjects.Add(xlSrcRange, rngDestino, , xlYes).Name = "TabelaDados"
+        End With
+        
+        
+        ' Salva a nova planilha com o nome desejado
+        wbDestino.SaveAs caminho & nomeArquivoDestino
+        
+        ' Fecha a planilha de destino
+        wbDestino.Close SaveChanges:=True
+        
+        MsgBox "Dados copiados com sucesso para a nova planilha.", vbInformation
+    Else
+        MsgBox "Não foi encontrado nenhum arquivo na pasta especificada.", vbExclamation
+    End If
+End Sub
+
+Sub ExcluirColunasVazias(ws As Worksheet)
+
+    Dim i As Long
+    
+    ' Defina a planilha na qual você deseja excluir as colunas
+    Set ws = ThisWorkbook.Sheets("Planilha1") ' Altere "Planilha1" para o nome da sua planilha
+    
+    ' Percorre todas as colunas da planilha
+    For i = ws.Cells(1, ws.Columns.Count).End(xlToLeft).Column To 1 Step -1
+        ' Verifica se o nome da coluna começa com "Coluna"
+        If Left(ws.Cells(1, i).Value, 6) = "Coluna" Then
+            ' Exclui a coluna
+            ws.Columns(i).Delete
+        End If
+    Next i
+End Sub
+Sub LimparFormatoPlanilha(ws As Worksheet)
+    Dim lastRow As Long
+    Dim lastColumn As Long
+    Dim rng As Range
+
+    ' Encontra a última linha com dados na planilha
+    lastRow = ws.Cells.Find("*", SearchOrder:=xlByRows, SearchDirection:=xlPrevious).Row
+    ' Encontra a última coluna com dados na planilha
+    lastColumn = ws.Cells.Find("*", SearchOrder:=xlByColumns, SearchDirection:=xlPrevious).Column
+    ' Define o intervalo que engloba toda a área de dados
+    Set rng = ws.Range(ws.Cells(1, 1), ws.Cells(lastRow, lastColumn))
+
+    ' Limpa o formato do intervalo selecionado
+    rng.ClearFormats
+End Sub
+
+
+
+' Extrai o número do mês da célula I7
+Function ExtrairMes(celula As Range) As Integer
+    Dim texto As String
+    Dim partes() As String
+    
+    ' Obtém o texto da célula I7
+    texto = celula.Value
+    
+    ' Divide o texto usando o delimitador ":" e armazena as partes em um array
+    partes = Split(texto, ":")
+    
+    ' Verifica se existem partes suficientes
+    If UBound(partes) >= 1 Then
+        ' Extrai a parte que contém o número do mês
+        Dim mesTexto As String
+        mesTexto = partes(1)
+        
+        ' Remove espaços em branco extras
+        mesTexto = Trim(mesTexto)
+        
+        ' Extrai o número do mês antes da barra "/"
+        partes = Split(mesTexto, "/")
+        
+        ' Verifica se existem partes suficientes
+        If UBound(partes) >= 0 Then
+            ' Tenta converter a parte do número do mês em um número inteiro
+            On Error Resume Next
+            ExtrairMes = CInt(partes(0))
+            On Error GoTo 0
+        End If
+    End If
+End Function
+
+Sub AgruparUsuariosPorMatricula(ws As Worksheet)
+    Dim lastRow As Long
+    Dim i As Long
+    Dim j As Long
+    Dim matricula As String
+    Dim rng As Range
+    
+    ' Encontra a última linha com dados na coluna E
+    lastRow = ws.Cells(ws.Rows.Count, "E").End(xlUp).Row
+    
+    ' Loop através das linhas da coluna E
+    For i = 2 To lastRow
+        ' Obtém a matrícula da célula atual na coluna E
+        matricula = ws.Cells(i, "E").Value
+        
+        ' Verifica se a matrícula não está vazia
+        If matricula <> "" Then
+            ' Procura por duplicatas da matrícula nas linhas subsequentes
+            Set rng = ws.Range(ws.Cells(i + 1, "E"), ws.Cells(lastRow, "E")).Find(What:=matricula, LookIn:=xlValues, LookAt:=xlWhole)
+            
+            ' Se encontrar uma duplicata, agrupa os dados correspondentes
+            If Not rng Is Nothing Then
+                ' Move os dados das colunas adjacentes para a linha encontrada
+                For j = 1 To ws.Cells(i, ws.Columns.Count).End(xlToLeft).Column
+                    ws.Cells(rng.Row, j).Value = ws.Cells(i, j).Value
+                Next j
+                
+                ' Apaga a linha original
+                ws.Rows(i).Delete
+                
+                ' Atualiza a última linha após a exclusão
+                lastRow = lastRow - 1
+                
+                ' Recua o contador de linha para a próxima iteração
+                i = i - 1
+            End If
+        End If
+    Next i
+End Sub
+
+
+
+Sub AtribuirValoresMeses()
+    Dim i As Integer
+    Dim coluna As Integer
+    
+    ' Inicia a atribuição de valores a partir da coluna L
+    coluna = 12
+    
+    ' Loop de 1 a 12 para atribuir os valores dos meses às colunas a partir de L
+    For i = 1 To 12
+        Columns(coluna).Cells(1, 1).Value = i
+        coluna = coluna + 1 ' Move para a próxima coluna
+    Next i
+End Sub
+
+Sub RecortarDadosParaIndice(ws As Worksheet, mes As Integer)
+    Dim colunaDestino As Integer
+    
+    ' Determina a coluna de destino com base no valor do mês
+    colunaDestino = mes + 11 ' 11 é a diferença entre os índices das colunas L e K
+    
+    ' Verifica se a coluna de destino está dentro do intervalo válido (L a W)
+    If colunaDestino >= 12 And colunaDestino <= 23 Then
+        ' Recorta os dados da coluna K e cola na coluna de destino
+        ws.Range(ws.Cells(2, "K"), ws.Cells(ws.Rows.Count, "K").End(xlUp)).Cut ws.Cells(2, colunaDestino)
+    Else
+        MsgBox "Valor de mês inválido! A coluna de destino não pode ser determinada.", vbExclamation
+    End If
+End Sub
+

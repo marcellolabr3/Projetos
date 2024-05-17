@@ -1,0 +1,10 @@
+[7676:7144:0515/192347.592:WARNING:chrome_main_delegate.cc(742)] This is Chrome version 125.0.6422.61 (not a warning)
+[7676:7144:0515/192347.606:ERROR:os_crypt_win.cc(98)] Failed to decrypt: Chave inválida para uso no estado especificado. (0x8009000B)
+[7676:7144:0515/192347.630:INFO:chrome_browser_cloud_management_controller.cc(168)] Starting CBCM Controller Initialization
+[7676:7144:0515/192347.630:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
+[7676:7144:0515/192347.661:WARNING:browser_management_service.cc(128)] EnterpriseLogoUrl fetch failed with error code -1 and MIME type 
+[7676:7144:0515/192348.686:INFO:CONSOLE(137)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v3/yn/r/YMXC68ehK5w.js?_nc_x=Ij3Wp8lg5Kz (137)
+[7676:7144:0515/192351.925:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.", source:  (0)
+[7676:7144:0515/192351.925:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'shared-storage'.", source:  (0)
+[7676:7144:0515/192351.925:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'shared-storage-select-url'.", source:  (0)
+[7676:7144:0515/192357.316:INFO:CONSOLE(132)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v3/ye/r/7kspLgWlw_L.js?_nc_x=Ij3Wp8lg5Kz (132)
